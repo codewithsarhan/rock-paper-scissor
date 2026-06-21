@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+/* Heading Style */
+#headingGame {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #34908b;
+  margin-bottom: 2rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.choice {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e293b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 4px solid transparent;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(79, 172, 254, 0.6);
+  border-color: #00f2fe;
+}
+
+.choice img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+#rockimg {
+  height: 180px;
+  width: 180px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.userScore,
+.compScore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.msgContainer {
+  margin-top: 2rem;
+}
+
+#msg {
+  background-color: #1e293b;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  #headingGame {
+    font-size: 2rem;
+  }
+
+  .choices {
+    gap: 1.5rem;
+  }
+
+  .choice {
+    width: 100px;
+    height: 100px;
+  }
+
+  .choice img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .scoreboard {
+    gap: 3rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 2.5rem;
+  }
+}
