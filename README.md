@@ -1,1 +1,1 @@
-Rock Paper Scissor
+# 🪨 📄 ✂️ ROCK, PAPER, SCISSORS: BEAT THE BOT
